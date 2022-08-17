@@ -1,0 +1,152 @@
+.home-container{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 40px;
+    margin-top: 7px;
+    display: flex;
+    flex-direction:  column;
+    justify-content:  center;
+    align-items: center;
+    padding: 0 25% 0 25%;
+}
+
+.home-container .logo{
+    position: inherit;
+    margin-top: -50px;
+    height: 520px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.home-container .logo .main-img{
+    position: absolute;
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.home-container .logo .main-img.active{
+    animation: spin 8s linear 1s infinite;
+}
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.home-container .logo .circle{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(4, 4, 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease;
+    opacity: 0;
+}
+
+.home-container .logo .main-img.active .circle{
+    opacity: 0;
+}
+
+
+
+.home-container img{
+    position: relative;
+    height: 200x;
+    width: 350px;
+    transform: translate(-200px);
+    opacity: 0;
+    animation: fade-in 1s ease 1 0.5s forwards;
+    z-index: -5;
+
+}
+
+@keyframes fade-in{
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+.home-container h2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 60%;
+    margin-top: 50px;
+    padding: 100px;
+}
+
+.home-container h2 span{
+    margin-bottom: 10px;
+    font-size: 35px;
+    opacity: 0.8;
+    padding-bottom: 0;
+    border-bottom: 2px solid var(--color-pri);
+    font-family: "Open Sans Condensed", sans-serif;
+    border-bottom: solid 5px ;
+    border-image: linear-gradient(0.25turn, rgb(248, 240, 0), rgb(82, 157, 160), rgba(238, 237, 240, 0));
+    border-image-slice: 1;
+}
+
+.home-container h2 p {
+    padding: 10px 30px 10px 30px;
+    font-size: 25px;
+    opacity: 1;
+    font-weight: 400;
+    
+    border-bottom: 2px solid var(--color-pri);
+    font-family: "Open Sans", sans-serif;
+    border-radius: 10px;
+    background: rgba(92, 92, 92, 0.322);
+    color:  white;
+    backdrop-filter: blur(5px);
+}
+
+.scroll-down{
+    transform: rotate(90deg);
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.scroll-down hr{
+    background-color: blue;
+    width: 20px;
+}
+
+.scroll-down h5{
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 100;
+}
+
+.scroll-down .scroll{
+    transform: rotate(-90deg);
+    font-size: 100;
+}
+
+.container .lego{
+   color: rgb(0, 255, 34);
+   width: 55px;
+   transform: rotate(-90deg);
+   border: dashed;
+}

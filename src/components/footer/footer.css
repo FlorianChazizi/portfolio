@@ -1,0 +1,60 @@
+.footer-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    min-height: 30vh;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.footer-container h1{
+    font-weight: 100;
+    font-size: 25px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+.footer-container h2{
+    font-weight: 100;
+    font-style: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 20px;
+    border-radius: 5px; 
+}
+
+.footer-container h2:hover{
+    background-color: rgba(0, 0, 0, 0.062);
+}
+.footer-text{
+    font-size: 20px;
+    color: rgb(1, 236, 1);
+    
+}
+hr{
+    color: rgb(1, 236, 1) ;
+}
+
+.footer-img{
+    height: 150px;
+    width: 150px;
+    animation: rotation 8s linear infinite;
+}
+
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+        }
+}
