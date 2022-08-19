@@ -1,11 +1,9 @@
 .navigation{
-    position: fixed;
-    left: 40px;
-    top: 50%;
+    position: relative;
     transform: translate(-50%, -100%);
     background-color: rgba(219, 210, 210, 0.175);
     padding: 15px 10px;
-    display: flex;
+    display: inline;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -15,6 +13,8 @@
     animation: fade-nav-in 1s ease 1 1s forwards;
     background: rgba(255, 253, 253, 0.640);
     z-index: 2;
+    margin-top: 50px;
+    
 }
 
 @keyframes fade-nav-in{
@@ -27,8 +27,8 @@
 .navigation a{
     position: relative;
     background: transparent;
-    background-color: rgba(0, 0, 0, 0.999);
     border-radius: 50%;
+    padding: 0 10px 0 10px;
 }
 
 .icon{

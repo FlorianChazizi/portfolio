@@ -1,4 +1,5 @@
 import './header.css';
+import Navbar from '../navbar/navbar';
 
 function Header() {
     return(
@@ -7,6 +8,7 @@ function Header() {
                 <p> <b>Chazizi Florian</b> </p>
                 <h2>  - Web Developer -</h2>
             </h3>
+            
         </div>
     )
 }

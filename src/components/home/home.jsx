@@ -2,12 +2,14 @@ import './home.css';
 
 import img from '../../img/tri.png';
 import {BsMouse} from 'react-icons/bs';
+import Navbar from '../navbar/navbar';
 
 
 function Home() {
     return(
-
+        
         <div id="home" className='container home-container'>
+            <Navbar />
             <div className="Logo">
                 <div className="main-img">
                     <span className='circle'> </span>
