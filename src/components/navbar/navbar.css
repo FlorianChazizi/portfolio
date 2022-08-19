@@ -1,7 +1,6 @@
 .navigation{
     position: relative;
     transform: translate(-50%, -100%);
-  
     padding: 15px 10px;
     display: inline;
     flex-direction: column;

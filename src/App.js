@@ -1,6 +1,5 @@
 
 import Header from './components/header/header';
-import Navbar from './components/navbar/navbar';
 import Home from './components/home/home';
 import Technologies from './components/technologies/technologies';
 import Projects from './components/projects/projects';
